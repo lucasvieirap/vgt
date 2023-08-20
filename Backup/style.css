@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Walter";
+    src: url('assets/Fonts/WalterTurncoat-Regular.ttf');
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 100%;
+}
+
+
+/* header -------------------------------------------------------------------------------------- */
+
+.headerWrapper {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    background-color: red;
+    align-items: space-between;
+}
+
+.vitorBoasVindas {
+    margin-left: 25%;
+    margin-top: 3.8em;
+}
+
+.VGTtitulo {
+    position: absolute;
+    right: -5em;
+    margin-right: 25%;
+    margin-top: 12em;
+    width: 20em;
+    height: 8em;
+}
+
+/* main ---------------------------------------------------------------------------------------- */
+
+main {
+    background-image: url();
+}
+
+.mainWrapper { 
+    max-width: 100%;
+}
+
+main h1 {
+    margin-top: 2%;
+    text-align: center;
+    font-family: Walter;
+}
+
+/* Chapters -------------------------------------*/
+
+.Chapters {
+    padding: 50px;
+    column-count: 3;
+}
+
+
+.ch1, .ch2, .ch3, .ch4, .ch5, .ch6, .ch7, .ch8, .ch9 {
+    display: block;
+    position: relative;
+    margin-left: 20%;
+    position: relative;
+    width: 364px;
+    height: 297px;
+    text-align: center;
+    /*margin-right: 100px;*/
+    margin-bottom: 50px;
+}
+
+.ch1 input, .ch2 input, .ch3 input, .ch4 input, .ch5 input, .ch6 input, .ch7 input, .ch8 input, .ch9 input {
+    display: block;
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 364px;
+    height: 297px;
+    box-shadow: 3px 2px 3px 2px gray;
+}
+/*
+.ch1, .ch2, .ch3, .ch1 input, .ch2 input, .ch3 input {
+    margin-left: 50%;
+}
+*/
+@media (max-width: 1600px)
+{
+     .Chapters {
+        padding : 50px;
+        column-count: 3;
+    }
+    
+}
+
+@media (max-width: 1200px)
+{
+    .VGTtitulo {
+        visibility: hidden;
+    }
+
+    .Chapters {
+        padding : 50px;
+        column-count: 2;
+    }
+
+    .ch1, .ch2, .ch3, .ch4, .ch5, .ch6, .ch7, .ch8, .ch9 {
+        position: relative;
+        margin-left: 20%;
+        display: block;
+        position: relative;
+        max-width: 364px;
+        height: 297px;
+        text-align: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .ch1 input, .ch2 input, .ch3 input, .ch4 input, .ch5 input, .ch6 input, .ch7 input,.ch8 input, .ch9 input {
+        display: block;
+        border-radius: 15px;
+        width: 364px / 2;
+        height: 297px / 2;
+        box-shadow: 3px 2px 3px 2px gray;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .VGTtitulo {
+        visibility: hidden;
+    }
+
+    .Chapters {
+        padding : 50px;
+        column-count: 1;
+    }
+    .ch1, .ch2, .ch3, .ch4, .ch5, .ch6, .ch7, .ch8, .ch9 {
+        position: relative;
+        margin-left: 35px;
+        display: block;
+        position: relative;
+        max-width: 364px;
+        height: 297px;
+        text-align: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .ch1 input, .ch2 input, .ch3 input, .ch4 input, .ch5 input, .ch6 input, .ch7 input,.ch8 input, .ch9 input {
+        display: block;
+        border-radius: 15px;
+        width: 364px / 2;
+        height: 297px / 2;
+        box-shadow: 3px 2px 3px 2px gray;
+    }
+}
+
+
+
+/* Fanarts --------------------------------------------------------------------------------------*/
+
+.fanartsWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #66666611;
+    margin-bottom: 25px;
+}
+
+.Fanart1, .Fanart2
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1200px)
+{
+    .Fanart1 h2, .Fanart2 h2 {
+        text-align: center;
+    }
+
+    .Fanart1 img, .Fanart2 img {
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .Fanart1 h2, .Fanart2 h2 {
+        text-align: center;
+    }
+
+    .Fanart1 img, .Fanart2 img {
+        display: block;
+        max-width: 70%;
+        margin: auto;
+    }
+}
